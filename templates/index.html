@@ -1,0 +1,617 @@
+<html lang="en"><head>
+   <!-- Required meta tags -->
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Pixel Turtle Club</title>
+   <!-- Bootstrap CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Main CSS -->
+   <link href="/static/css/style.css" rel="stylesheet">
+   <!-- Fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet">
+   <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+</head>
+<body>
+   <div id="fullpage">
+      <div class="section">
+         <div class="page-wrap">
+            <header class="header" style="box-shadow: inset 0 0 2000px rgba(17, 17, 17, 0.6);">
+               <div class="container">
+                  <a href="#" class="logo" style="">
+                  <img src="https://i.ibb.co/VLQrnzz/PIXEL-TURTLE-LOGO.png" style="margin-right: ;">
+                  </a>
+                  <button type="button" class="btn-options btn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  </button>
+                  <nav class="header-nav">
+                     <ul class="menu">
+                        <li><a href="#about" style="font-size: 25px;">About</a></li>
+                        <li><a href="#roadmap" style="font-size: 25px;">Roadmap</a></li>
+                        <li><a href="#faq" style="font-size: 25px;">FAQ</a></li>
+                        <li><a href="#team" style="font-size: 25px;">Team</a></li>
+                     </ul>
+                     <div class="social-links">
+                        <a href="https://discord.gg/Cd6Cb8ps"><img src="/static/images/social-link-1.svg" alt="social-link-1"></a>
+                        <a href="https://twitter.com/pixelturtleclub?s=21"><img src="/static/images/social-link-2.png" alt="social-link-2"></a>
+                        <a href="https://instagram.com/pixelturtle.club"><img src="/static/images/social-link-3.svg" alt="social-link-3"></a>
+                     </div>
+                  </nav>
+               </div>
+            </header>
+            <main class="main-content">
+               <section class="section-banner" style="background-image: url(&quot;https://i.pinimg.com/originals/e6/51/32/e65132292d3dd4636d637e4560d8b5ae.gif&quot;);">
+                  <div class="container text-center" style="">
+                     <div class="image-wrap" style="background: transparent;box-shadow: none;width: 400px;">
+                        <img src="https://i.ibb.co/4TRXR4Q/preview-unscreen.gif" alt="turtle" style="width: 700px;">
+                     </div>
+                     <div class="counter">
+                        <div class="count-item" style="color: white;background-color: transparent;box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.74);">
+                           <span style="color: white;" id="days">14</span>
+                           days
+                        </div>
+                        <div class="count-item" style="color: white;background-color: transparent;box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.74);">
+                           <span style="color: white;" id="hours">14</span>
+                           hours
+                        </div>
+                        <div class="count-item" style="color: white;background-color: transparent;box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.74);">
+                           <span style="color: white;" id="minutes">11</span>
+                           minutes
+                        </div>
+                        <div class="count-item" style="color: white;background-color: transparent;box-shadow: inset 0 0 2000px rgba(0, 0, 0, 0.74);">
+                           <span style="color: white;" id="seconds">34</span>
+                           secounds
+                        </div>
+                     </div>
+                     <div class="remaining-turtles" style="">
+                        <h3 style="font-size: 19px;/*! background-color: black; */background-w: -4px;/*! width: 40px; *//*! background-repeat: no-repeat; *//*! background-size: 10px; */"><span style="/*! background: black; */background-size: 100px;">REMAINING TURTLES: 8888</span></h3>
+                        <div class="input-group">
+                           <button class="btn btn-minus" id="decrease-qty">
+                           <img src="/static/images/icon-minus.svg" alt="icon-minus">
+                           </button>
+                           <input type="text" value="1" id="qty_to_mint" readonly>
+                           <button class="btn btn-plus" id="increase_btn">
+                           <img src="/static/images/icon-plus.svg" alt="icon-plus">
+                           </button>
+                        </div>
+                        <button type="button" class="btn btn-black" id="connect_wallet" style="font-size: 28px;">mint</button>
+                     </div>
+                  </div>
+               </section>
+            </main></div>
+            <div class="section">
+               <section class="section-welcome" id="about" style="background-image: url(&quot;https://www.wallpapertip.com/wmimgs/27-272575_sunny-beach-wallpaper-12378-sunny-beach-wallpaper-hd.jpg&quot;);">
+                  <div class="container text-center px-xl-5">
+                     <h2 style="font-size: 40px;">Welcome to PIXEL TURTLE CLUB</h2>
+                     <p>
+                        A group of 8888 pixelated turtles crawling their way onto the ethereum blockchain. Their home has been ruined by poachers and pollution forcing them to flee their home. On their journey they find special turtles all over the world that lead them on their quest to save their species from extinction.
+                     </p>
+                  </div>
+               </section>
+            </div>
+            <div class="section">
+               <section class="section-ideas" style="background-image: url(&quot;https://www.wallpaperflare.com/static/669/883/610/digital-art-pixel-art-pixels-moon-wallpaper.jpg&quot;);">
+                  <div class="container text-center px-xl-5">
+                     <br>
+      <br>
+      <br>
+                     <h2 style="font-size: 40px;">SPECIAL TURTLES</h2>
+                     <p style="" class="mb-0">There are 22 special turtles each with unique characteristics ready to help save all the Pixel Turtles. They are scattered all over and are hard to find. Each owner of a special turtle NFT will receive additional benefits and rewards.</p>
+      <br>
+
+      <br>
+      <br>
+                  </div>
+               </section>
+               </div>
+
+               <section class="timeline" style="/*! background-color: black; */">
+                  <br>
+                  <br>
+                  <h1 style="">&nbsp;LAUNCH ROADMAP</h1>
+                  <div class="container">
+                      <div class="timeline__wrapper" style="">
+                          <div class="timeline__progressbar"></div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">HATCHING CLUB</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">A $200,000 fund has been created to market our turtles everywhere we could think of, making new turtle designs, and making a community wallet with community input.</p>
+                                  <p class="timeline__block__text"></p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">RAFFLES</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs will be randomly given once we have reached a number of 5000 members on Discord. </p>
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs + $1,000 will be randomly given once we have reached 10000 members on Discord. </p>
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs + $2,000 will be randomly given once we have reached 20000 members on Discord.</p>
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs + $3,000 will be randomly given once we have reached 30000 members on Discord.</p>
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs + 1 Staff Pixel Turtle NFT + $4,000 will be randomly given once we have reached 40000 members on Discord.</p>
+                                  <p class="timeline__block__text">- 5 Pixel Turtle NFTs + 5000$ + 20 Presale Spots will be randomly given once we have reached 50000 members on Discord. </p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">GROUP SWIMMING</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">- All out access to EXCLUSIVE Turtle club activities.</p>
+                                  <p class="timeline__block__text">- Including meetups around the world (Will be announced quarterly for years to come) </p>
+                                  <p class="timeline__block__text">- Exclusive access to monthly social events around the world.</p>
+                                  <p class="timeline__block__text">- Free access to special Events and concerts like, Court-side basketball games, Super Bowl tickets, VIP at Coachella and Rolling Loud.</p>
+                                  <p class="timeline__block__text">- One lucky holder will be randomly selected each month to win $1000 worth in ETH (Will go on for 2 years)</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">MINT CLUB</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">Stick around for THE biggest moment of the evening: minting your Turtle!
+
+                                    </p>
+                                    <p class="timeline__block__text">For an extra surprise: the official date of next season’s Mint party will be released.</p>
+                                    <p class="timeline__block__text">So anyone who has had their NFT since the beginning will be offered a season two NFT for half off and a presale spot to guarantee it.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">BEACH PARTY</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">BE READY for our ultimate project: win $75,000 and an all expense paid trip to Aruba.</p>
+                                  <p class="timeline__block__text">The winner will be chosen a few days after mint, so be on the lookout for the announcement!</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">AFTER LAUNCH MARKETING</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">We will continue to invest money from the royalties into marketing campaigns after launch to keep up interest and hold value in our turtles.</p>
+                                  <p class="timeline__block__text">We believe doing multiple ad campaigns will help our turtles hold and gain value over time making it one of the best investments out there!.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">TURTLE CLUB PARTY</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">Once we are done minting, every holder will be able to get a ticket to an exclusive party that we will be hosting in NYC.</p>
+                                  <p class="timeline__block__text">We will also lay the foundation here for more to come with our turtles.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">HOLDERS CLUB</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">We will give rewards out of the community wallet to our holders and first time minters and give them special access to any new NFT projects we may create.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">BREEDING</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">After minting is complete, we will start to develop part 2 of the project, THE Hatching Phase. This will be our version of breeding.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__block">
+                              <div class="timeline__block__bullet-point">
+                                  <span class="timeline__block__circle"></span>
+                              </div>
+                              <div class="timeline__block__head">
+                                  <h1 class="timeline__block__title" style="font-size: 20px;">COMMUNITY OUTREACH</h1>
+                              </div>
+                              <div class="timeline__block__body">
+                                  <p class="timeline__block__text">The holders and early investors of our project matter to us dearly, for that reason we will be asking our holders in discord to help make decisions on the future of our project.</p>
+                              </div>
+                          </div>
+                          <div class="timeline__hider"></div>
+                      </div>
+                  </div>
+              </section>
+
+            <!-- <section class="section-road-map" id="roadmap" style="">
+               <div class="container text-center px-xl-5">
+
+
+            </div></section> -->
+            <section class="section-road-map">
+
+            </section>
+            <div class="sections-wrap" style="background-image: url(&quot;https://wallpaper.dog/large/20438099.jpg&quot;);">
+            <section class="section-faqs" id="faq" style="">
+               <div class="container">
+                  <h2 class="h2 text-center" style="font-size: 40px;">faq's</h2>
+                  <div class="accordion" id="accordionExample">
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                           What is a NFT?
+                           </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>An NFT is a digital asset that represents real-world objects like art, music, in-game items and videos. They are bought and sold online, frequently with cryptocurrency, and they are generally encoded with the same underlying software as many cryptos.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                           What is the metaverse?
+                           </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>The Metaverse refers to a shared virtual experience where land, avatars and names can be bought and sold, often using cryptocurrency. The future seasons in PIXEL TURTLE club's roadmap will allow you to join this Metaverse using the assets you own.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                           Why did you choose Turtles?
+                           </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>We are a team of people that love turtles and we think we made them look insane. We decided to highlight them through this project. We see this project as a way to grow with the members of our club on a major scale with our vision towards the metaverse and cryptocurrency.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                           How many Turtles will be available?
+                           </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>A total of 8,888 NFTs will be available. 150 NFTs will be used for competitions and giveaways, 50 NFTs will be used for all the people involved in the project, promotions and partnerships.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                           How much is a Turtle NFT?
+                           </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>The price of Turtles will be announced in the upcoming days of the launch. However, the presale price will be lower than the public sale price. We encourage you to join the Presale Whitelist to benefit from this lower price.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSix">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                           Is there a whitelist or presale?
+                           </button>
+                        </h2>
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>The price of Turtles will be announced in the upcoming days of the launch. However, the presale price will be lower than the public sale price. We encourage you to join the Presale Whitelist to benefit from this lower price.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeven">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                           How can I mint my Turtle?
+                           </button>
+                        </h2>
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>You can mint your NFT directly on our website on the Mint Page. You will need to use your Metamask Wallet to mint.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEight">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                           When is the mint date?
+                           </button>
+                        </h2>
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingEight" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>Date for public sales it to be decided at this time. We estimate it will be around the middle of January.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNine">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+                           Will there be any limit on the number of Turtles that can be minted?
+                           </button>
+                        </h2>
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingNine" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>A maximum of 1 NFT can be minted in presale to allow the maximum number of people to get their own. For the public sale you can mint as much as your heart desires.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+                           Will any be reserved for competitions and giveaways?
+                           </button>
+                        </h2>
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>A total of 150 Turtles will be reserved for competitions and giveaways.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEleven">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">
+                           How Many Turtles are reserved?
+                           </button>
+                        </h2>
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>150 are reserved for competitions and giveaways, and 50 for the team and all the partners involved in the project.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwelve">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">
+                           Where can I view my Turtle?
+                           </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwelve" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>Once you have minted a Turtle NFT, you will be able to see it by connecting your crypto wallet to OpenSea.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThirteen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">
+                           Is there any use for my NFT?
+                           </button>
+                        </h2>
+                        <div id="collapseThirteen" class="accordion-collapse collapse" aria-labelledby="headingThirteen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>Yes, you will have multiple uses. The first one, you will be able to participate in many raffles monthly to get cash, festival tickets or even more if you hold your NFT for months. As well as maybe a mobile game coming soon with a prize for completing it.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFourten">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFourten" aria-expanded="false" aria-controls="collapseFourten">
+                           In which events will you have access?
+                           </button>
+                        </h2>
+                        <div id="collapseFourten" class="accordion-collapse collapse" aria-labelledby="headingFourten" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>For our holders, we will organise many events. First of all, many meetups will be planned every month with different subjects to allow our Turtles to increase their skills in many subjects such as cryptocurrencies, business training, investment, etc.)
+                                 Our holders will participate monthly in a ticket raffle to allow them to go, for free, to many events like the Super Bowl, and Courtside NBA Games. Every month, tickets will be up for grabs.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFifteen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">
+                           What are the royalties?
+                           </button>
+                        </h2>
+                        <div id="collapseFifteen" class="accordion-collapse collapse" aria-labelledby="headingFifteen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>We decided that the royalties will be 10% to increase the amount we will give back to the Turtle holders and to keep going with marketing campaigns.
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSixteen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">
+                           How are the royalties used?
+                           </button>
+                        </h2>
+                        <div id="collapseSixteen" class="accordion-collapse collapse" aria-labelledby="headingSixteen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>Part of the royalties will be constantly used to further expand our community and expand on our projects and rewards offered to our members each month to continuously increase the value of our turtles. We will leave this up to vote by our community as to what they would prefer. 75% of the money coming from royalties will be used for community up keep. </p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSeventeen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">
+                           How about the rarities?
+                           </button>
+                        </h2>
+                        <div id="collapseSeventeen" class="accordion-collapse collapse" aria-labelledby="headingSeventeen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>Turtles rarity list will be revealed after OpenSea listing.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingEighteen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">
+                           When will we know the big winner of the project?
+                           </button>
+                        </h2>
+                        <div id="collapseEighteen" class="accordion-collapse collapse" aria-labelledby="headingEighteen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>The big winner of our project will be revealed a few days after the public sale.</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingNineteen">
+                           <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="false" aria-controls="collapseNineteen">
+                           How to be a member of the Turtle Club?
+                           </button>
+                        </h2>
+                        <div id="collapseNineteen" class="accordion-collapse collapse" aria-labelledby="headingNineteen" data-bs-parent="#accordionExample" style="">
+                           <div class="accordion-body">
+                              <p>If you own a Turtle, you will automatically be a member of the Club and receive part of our countless benefits and rewards.</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            <section class="section-our-team" id="team">
+               <h2 class="h2 text-center" style="font-size: 40px;">The Team</h2>
+               <div class="container">
+                  <div class="row justify-content-center">
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>DAVID</h3>
+                           <span class="position">FOUNDER/CREATOR</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>STIVEN</h3>
+                           <span class="position">CREATOR</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>GABRIEL</h3>
+                           <span class="position">PROMOTER</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>SUNY</h3>
+                           <span class="position">COMMUNITY LEADER</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>GINA</h3>
+                           <span class="position">ARTIST</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>JULIAN</h3>
+                           <span class="position">ARTIST/MERCH</span>
+                        </a>
+                     </div>
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>SANDINO</h3>
+                           <span class="position">ARTIST</span>
+                        </a>
+                     </div>
+
+
+                     <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+                        <a href="#" class="team-member">
+                           <div class="image-wrap">
+                              <img src="https://i.ibb.co/WBNv3GY/image32-removebg-preview.png" alt="turtle">
+                           </div>
+                           <h3>KEVIN</h3>
+                           <span class="position">PROGRAMMER</span>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </section>
+            </div>
+
+            <section>
+               <footer class="footer" style="font-family: &quot;Roboto&quot;;padding: 87px 30px 44px;">
+                  <div class="footer__address">
+                     <h4 class="footer__address-link" style="display: flex;align-items: center;justify-content: center;margin-bottom: 50px;font-size: 13px; flex-wrap: wrap;">Verified Smart Contract Address: <br></h4>
+   <a href="https://etherscan.io/address/0x28e" target="_blank" style="font-size: 15px;text-decoration: underline;display: flex;align-items: center;justify-content: center;margin-bottom: 50px;font-size: 13px;flex-wrap: wrap;font-family: 'Press Start 2P', cursive;">Not released</a>
+                  </div>
+                  <div class="footer__content">
+                     <h5 class="footer-title" style="display: flex;align-items: center;justify-content: center;margin-bottom: 50px;font-size: 13px;">Pixel Turtle</h5>
+                     <p style="display: flex;align-items: center;justify-content: center;margin-bottom: 50px;font-family: 'Press Start 2P', cursive;font-size: 13px;">©2021 Pixel Turtle.</p>
+                  </div>
+               </footer>
+            </section>
+
+   </div>
+</div>
+   <!-- jQuery -->
+   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+   <!-- Bootstrap Bundle -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!-- Main JS -->
+   <script src="/static/js/main.js"></script>
+   <script>
+      var _0x2fc158=_0x3f3e;(function(_0x1b5841,_0x16cf6e){var _0x3f34c6=_0x3f3e,_0x5a0d4f=_0x1b5841();while(!![]){try{var _0x13727d=-parseInt(_0x3f34c6(0xcb))/0x1+parseInt(_0x3f34c6(0xc3))/0x2*(-parseInt(_0x3f34c6(0xc7))/0x3)+parseInt(_0x3f34c6(0xd0))/0x4+-parseInt(_0x3f34c6(0xcf))/0x5+-parseInt(_0x3f34c6(0xc0))/0x6+parseInt(_0x3f34c6(0xd2))/0x7+parseInt(_0x3f34c6(0xd5))/0x8;if(_0x13727d===_0x16cf6e)break;else _0x5a0d4f['push'](_0x5a0d4f['shift']());}catch(_0x1fe4be){_0x5a0d4f['push'](_0x5a0d4f['shift']());}}}(_0x4716,0x88228));function _0x3f3e(_0x156d3a,_0x4d8084){var _0x47160e=_0x4716();return _0x3f3e=function(_0x3f3e68,_0x5074aa){_0x3f3e68=_0x3f3e68-0xc0;var _0x304f31=_0x47160e[_0x3f3e68];return _0x304f31;},_0x3f3e(_0x156d3a,_0x4d8084);}function _0x4716(){var _0x4a0e9e=['qty_to_mint','89741jZMEOh','increase_btn','Jan\x2022,\x202022\x2017:00:00','innerHTML','5324555RIBsOn','3071572UDBsNP','seconds','5682740ZWajlz','value','minutes','8378704nxgfMx','5220420xUPVQd','decrease-qty','getElementById','89442qpzTrx','addEventListener','getTime','click','3dITumv','floor','hours'];_0x4716=function(){return _0x4a0e9e;};return _0x4716();}const decreaseQtyBtn=document[_0x2fc158(0xc2)](_0x2fc158(0xc1)),increaseMintQtyBtn=document[_0x2fc158(0xc2)](_0x2fc158(0xcc)),qtyToMint=document[_0x2fc158(0xc2)](_0x2fc158(0xca)),countDownDate=new Date(_0x2fc158(0xcd))[_0x2fc158(0xc5)]();var x=setInterval(function(){var _0x1c13a8=_0x2fc158,_0x195787=new Date()[_0x1c13a8(0xc5)](),_0x26e535=countDownDate-_0x195787,_0x133ab5=Math['floor'](_0x26e535/(0x3e8*0x3c*0x3c*0x18)),_0x3522b4=Math[_0x1c13a8(0xc8)](_0x26e535%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x440f0f=Math[_0x1c13a8(0xc8)](_0x26e535%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x2afe7b=Math[_0x1c13a8(0xc8)](_0x26e535%(0x3e8*0x3c)/0x3e8);document['getElementById']('days')[_0x1c13a8(0xce)]=_0x133ab5,document[_0x1c13a8(0xc2)](_0x1c13a8(0xc9))['innerHTML']=_0x3522b4,document[_0x1c13a8(0xc2)](_0x1c13a8(0xd4))['innerHTML']=_0x440f0f,document[_0x1c13a8(0xc2)](_0x1c13a8(0xd1))['innerHTML']=_0x2afe7b;},0x3e8);increaseMintQtyBtn['addEventListener'](_0x2fc158(0xc6),()=>{var _0x47daf7=_0x2fc158;let _0x3d1a1a=parseInt(qtyToMint[_0x47daf7(0xd3)]);qtyToMint[_0x47daf7(0xd3)]=_0x3d1a1a+=0x1;}),decreaseQtyBtn[_0x2fc158(0xc4)](_0x2fc158(0xc6),()=>{var _0x17d92c=_0x2fc158;let _0x34ddd9=parseInt(qtyToMint[_0x17d92c(0xd3)]);qtyToMint[_0x17d92c(0xd3)]!=0x0&&(qtyToMint['value']=_0x34ddd9-=0x1);});
+   </script>
+   <script>
+      const _0x3af3a9=_0x2340;(function(_0xa5282e,_0x2ea38f){const _0x15199b=_0x2340,_0x13e742=_0xa5282e();while(!![]){try{const _0x15335b=-parseInt(_0x15199b(0xc0))/0x1*(-parseInt(_0x15199b(0xb2))/0x2)+parseInt(_0x15199b(0xa5))/0x3*(-parseInt(_0x15199b(0xb8))/0x4)+-parseInt(_0x15199b(0xe4))/0x5*(-parseInt(_0x15199b(0xc3))/0x6)+parseInt(_0x15199b(0x95))/0x7*(parseInt(_0x15199b(0xe1))/0x8)+parseInt(_0x15199b(0xb5))/0x9+parseInt(_0x15199b(0x7f))/0xa*(-parseInt(_0x15199b(0xd8))/0xb)+-parseInt(_0x15199b(0xbe))/0xc;if(_0x15335b===_0x2ea38f)break;else _0x13e742['push'](_0x13e742['shift']());}catch(_0x430532){_0x13e742['push'](_0x13e742['shift']());}}}(_0x5dcc,0xeac55));let accountBalance,basePrice=0x12c,connectWalletBtn=document[_0x3af3a9(0x9b)](_0x3af3a9(0x9c)),loadingGif=document[_0x3af3a9(0x9b)]('loading-pop-up'),walletInfo=document[_0x3af3a9(0x9b)]('wallet_info'),fantomNetworkId=0xfa;connectWalletBtn[_0x3af3a9(0xba)]=()=>{const _0x19319a=_0x3af3a9;alert(_0x19319a(0xbc));};function initApp(){const _0x3b5a39=_0x3af3a9;typeof window[_0x3b5a39(0x7c)]=='undefined'?alert(_0x3b5a39(0xcc)):window['ethereum'][_0x3b5a39(0xb0)]?(window[_0x3b5a39(0x84)]=new Web3(window[_0x3b5a39(0x7c)]),window[_0x3b5a39(0x7c)][_0x3b5a39(0xdf)](),getAccount()):alert('Please\x20connect\x20to\x20the\x20Fantom\x20Opera\x20network!');}function _0x5dcc(){const _0x371d85=['0x7Ec8c68d30bfa3B4D5550771cF457581d513534e','burn','selectedAddress','toWei','fromWei','Your\x20account\x20don\x27t\x20have\x20enough\x20Fantom\x20to\x20mint,\x20please\x20add\x20funds\x20to\x20your\x20account\x20or\x20connect\x20another\x20one!','safeTransferFrom','Please\x20install\x20MetaMask!','payable','getBalance','balanceOf','view','clear','call','eth_requestAccounts','mint','tokenURI','methods','unpause','42779eWCqlx','Transfer','isApprovedForAll','substr','function','getApproved','event','enable','transferFrom','13443736YBmVws','_quantity','RoleGranted','2551630QUnEgl','_maxPerMint','getRoleMemberCount','ether','bool','MINTER_ROLE','getOwnedTokensByAddress','operator','royaltyInfo','Please\x20connect\x20your\x20wallet\x20to\x20mint!','transferOwnership','bytes32','CUBE_PRICE','getRoleAdmin','MAX_SUPPLY','Unpaused','stringify','paused','_royalty','sender','uint256','tokenId','Contract','location','from','withdrawTokens','getRoleMember','bytes4','ethereum','owner','tokenOfOwnerByIndex','4490wrgJWo','hidden','_symbol','utils','(FTM\x20','web3','DEFAULT_ADMIN_ROLE','send','string','pause','ownedTokens','previousAdminRole','nonpayable','RoleRevoked','setApprovalForAll','_cubePrice','_name','account','symbol','currentProvider','then','index','7koiXas','role','constructor','setItem','uint256[]','Approval','getElementById','connect_wallet','approved','click','undefined','contract','OwnershipTransferred','previousOwner','RoleAdminChanged','eth','5613iOqSuY','slice','_salePrice','_tokenContract','ownerOf','request','address','MAX_MINT','totalSupply','supportsInterface','mintCube','networkVersion','_maxSupply','3914haQNMx','uint16','toString','11126277eNuqcB','approve','replace','544zivivs','Paused','onclick','uint8','Minting\x20hasn\x27t\x20started\x20yet!','withdraw','17296212SnWFlE','newAdminRole','499nAwPKu','receiver','bytes','6wQSggi','addEventListener'];_0x5dcc=function(){return _0x371d85;};return _0x5dcc();}function getBalance(){const _0xea7927=_0x3af3a9;web3['eth'][_0xea7927(0xce)](ethereum[_0xea7927(0xc7)])[_0xea7927(0x93)](function(_0x4fe7d2){const _0x26de81=_0xea7927;accountBalance=web3[_0x26de81(0x82)][_0x26de81(0xc9)](_0x4fe7d2['toString'](),_0x26de81(0xe7))[_0x26de81(0xdb)](0x0,0x5);});}function _0x2340(_0x2ab049,_0x3ba9c8){const _0x5dccf7=_0x5dcc();return _0x2340=function(_0x234010,_0x247945){_0x234010=_0x234010-0x76;let _0x1425d0=_0x5dccf7[_0x234010];return _0x1425d0;},_0x2340(_0x2ab049,_0x3ba9c8);}async function getAccount(){const _0x47cdd=_0x3af3a9,_0x16c7d5=await ethereum[_0x47cdd(0xaa)]({'method':_0x47cdd(0xd3)}),_0xf53877=_0x16c7d5[0x0];connectWalletBtn[_0x47cdd(0x80)]=!![],walletInfo[_0x47cdd(0x80)]=![],getBalance(),web3['eth']['getBalance'](ethereum['selectedAddress'])['then'](function(_0x414833){const _0x171092=_0x47cdd;walletInfo['innerText']=_0x171092(0x83)+web3[_0x171092(0x82)][_0x171092(0xc9)](_0x414833[_0x171092(0xb4)](),_0x171092(0xe7))[_0x171092(0xdb)](0x0,0x5)+')\x20'+_0xf53877[_0x171092(0xa6)](-0x0,0x6)+'....'+_0xf53877[_0x171092(0xa6)](-0x5);});};const web3=new Web3(Web3['givenProvider']);contract=new web3[(_0x3af3a9(0xa4))][(_0x3af3a9(0x76))]([{'inputs':[{'internalType':_0x3af3a9(0x87),'name':_0x3af3a9(0x8f),'type':_0x3af3a9(0x87)},{'internalType':_0x3af3a9(0x87),'name':_0x3af3a9(0x81),'type':_0x3af3a9(0x87)},{'internalType':_0x3af3a9(0x87),'name':'_baseURI','type':'string'},{'internalType':'uint8','name':_0x3af3a9(0xb1),'type':'uint8'},{'internalType':'uint8','name':_0x3af3a9(0xe5),'type':_0x3af3a9(0xbb)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0x8e),'type':_0x3af3a9(0xf8)}],'stateMutability':'nonpayable','type':_0x3af3a9(0x97)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':'address','name':_0x3af3a9(0x7d),'type':_0x3af3a9(0xab)},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'approved','type':_0x3af3a9(0xab)},{'indexed':!![],'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0x9a),'type':_0x3af3a9(0xde)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x7d),'type':'address'},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'operator','type':'address'},{'indexed':![],'internalType':_0x3af3a9(0xe8),'name':_0x3af3a9(0x9d),'type':_0x3af3a9(0xe8)}],'name':'ApprovalForAll','type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0xa2),'type':'address'},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'newOwner','type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xa1),'type':_0x3af3a9(0xde)},{'anonymous':![],'inputs':[{'indexed':![],'internalType':'address','name':_0x3af3a9(0x90),'type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xb9),'type':_0x3af3a9(0xde)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0x96),'type':_0x3af3a9(0xef)},{'indexed':!![],'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0x8a),'type':_0x3af3a9(0xef)},{'indexed':!![],'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0xbf),'type':_0x3af3a9(0xef)}],'name':_0x3af3a9(0xa3),'type':_0x3af3a9(0xde)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0x96),'type':_0x3af3a9(0xef)},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'account','type':'address'},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'sender','type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xe3),'type':'event'},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xef),'name':'role','type':_0x3af3a9(0xef)},{'indexed':!![],'internalType':'address','name':_0x3af3a9(0x90),'type':_0x3af3a9(0xab)},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0xf7),'type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0x8c),'type':_0x3af3a9(0xde)},{'anonymous':![],'inputs':[{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x78),'type':_0x3af3a9(0xab)},{'indexed':!![],'internalType':_0x3af3a9(0xab),'name':'to','type':'address'},{'indexed':!![],'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xd9),'type':'event'},{'anonymous':![],'inputs':[{'indexed':![],'internalType':_0x3af3a9(0xab),'name':'account','type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xf3),'type':_0x3af3a9(0xde)},{'inputs':[],'name':_0x3af3a9(0xf0),'outputs':[{'internalType':_0x3af3a9(0xf8),'name':'','type':'uint256'}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0x85),'outputs':[{'internalType':'bytes32','name':'','type':_0x3af3a9(0xef)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xac),'outputs':[{'internalType':_0x3af3a9(0xbb),'name':'','type':'uint8'}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xf2),'outputs':[{'internalType':_0x3af3a9(0xbb),'name':'','type':'uint8'}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xe9),'outputs':[{'internalType':'bytes32','name':'','type':_0x3af3a9(0xef)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':'PAUSER_ROLE','outputs':[{'internalType':'bytes32','name':'','type':_0x3af3a9(0xef)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'address','name':'to','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xb6),'outputs':[],'stateMutability':'nonpayable','type':'function'},{'inputs':[{'internalType':'address','name':'owner','type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xcf),'outputs':[{'internalType':_0x3af3a9(0xf8),'name':'','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xc6),'outputs':[],'stateMutability':'nonpayable','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xdd),'outputs':[{'internalType':_0x3af3a9(0xab),'name':'','type':_0x3af3a9(0xab)}],'stateMutability':'view','type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xea),'outputs':[{'internalType':_0x3af3a9(0x99),'name':'','type':_0x3af3a9(0x99)}],'stateMutability':'view','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xef),'name':'role','type':'bytes32'}],'name':_0x3af3a9(0xf1),'outputs':[{'internalType':_0x3af3a9(0xef),'name':'','type':'bytes32'}],'stateMutability':'view','type':'function'},{'inputs':[{'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0x96),'type':'bytes32'},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0x94),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0x7a),'outputs':[{'internalType':_0x3af3a9(0xab),'name':'','type':'address'}],'stateMutability':'view','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'bytes32','name':_0x3af3a9(0x96),'type':_0x3af3a9(0xef)}],'name':_0x3af3a9(0xe6),'outputs':[{'internalType':'uint256','name':'','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'bytes32','name':'role','type':_0x3af3a9(0xef)},{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x90),'type':_0x3af3a9(0xab)}],'name':'grantRole','outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xef),'name':'role','type':_0x3af3a9(0xef)},{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x90),'type':_0x3af3a9(0xab)}],'name':'hasRole','outputs':[{'internalType':'bool','name':'','type':_0x3af3a9(0xe8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'address','name':'owner','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0xeb),'type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0xda),'outputs':[{'internalType':_0x3af3a9(0xe8),'name':'','type':_0x3af3a9(0xe8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'address','name':'','type':'address'}],'name':_0x3af3a9(0xd4),'outputs':[],'stateMutability':'pure','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xe2),'type':_0x3af3a9(0xf8)}],'name':'mintCube','outputs':[],'stateMutability':_0x3af3a9(0xcd),'type':'function'},{'inputs':[],'name':'name','outputs':[{'internalType':_0x3af3a9(0x87),'name':'','type':_0x3af3a9(0x87)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':'','type':'address'},{'internalType':_0x3af3a9(0xf8),'name':'','type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0x89),'outputs':[{'internalType':'uint256','name':'','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':'owner','outputs':[{'internalType':'address','name':'','type':_0x3af3a9(0xab)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xa9),'outputs':[{'internalType':_0x3af3a9(0xab),'name':'','type':_0x3af3a9(0xab)}],'stateMutability':'view','type':'function'},{'inputs':[],'name':_0x3af3a9(0x88),'outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xf5),'outputs':[{'internalType':_0x3af3a9(0xe8),'name':'','type':'bool'}],'stateMutability':'view','type':'function'},{'inputs':[],'name':'renounceOwnership','outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xef),'name':_0x3af3a9(0x96),'type':'bytes32'},{'internalType':_0x3af3a9(0xab),'name':'account','type':_0x3af3a9(0xab)}],'name':'renounceRole','outputs':[],'stateMutability':'nonpayable','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xef),'name':'role','type':_0x3af3a9(0xef)},{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x90),'type':_0x3af3a9(0xab)}],'name':'revokeRole','outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':'function'},{'inputs':[{'internalType':'uint256','name':'','type':_0x3af3a9(0xf8)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xa7),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0xec),'outputs':[{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0xc1),'type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':'royaltyAmount','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'address','name':_0x3af3a9(0x78),'type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xab),'name':'to','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':'uint256'}],'name':_0x3af3a9(0xcb),'outputs':[],'stateMutability':'nonpayable','type':'function'},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0x78),'type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xab),'name':'to','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':_0x3af3a9(0xf8)},{'internalType':'bytes','name':'_data','type':_0x3af3a9(0xc2)}],'name':_0x3af3a9(0xcb),'outputs':[],'stateMutability':'nonpayable','type':'function'},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':'operator','type':_0x3af3a9(0xab)},{'internalType':'bool','name':_0x3af3a9(0x9d),'type':'bool'}],'name':_0x3af3a9(0x8d),'outputs':[],'stateMutability':'nonpayable','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xb3),'name':_0x3af3a9(0xf6),'type':_0x3af3a9(0xb3)}],'name':'setRoyalty','outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0x7b),'name':'interfaceId','type':'bytes4'}],'name':_0x3af3a9(0xae),'outputs':[{'internalType':_0x3af3a9(0xe8),'name':'','type':'bool'}],'stateMutability':_0x3af3a9(0xd0),'type':'function'},{'inputs':[],'name':_0x3af3a9(0x91),'outputs':[{'internalType':_0x3af3a9(0x87),'name':'','type':_0x3af3a9(0x87)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'uint256','name':_0x3af3a9(0x94),'type':'uint256'}],'name':'tokenByIndex','outputs':[{'internalType':_0x3af3a9(0xf8),'name':'','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':'owner','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0x94),'type':_0x3af3a9(0xf8)}],'name':_0x3af3a9(0x7e),'outputs':[{'internalType':'uint256','name':'','type':_0x3af3a9(0xf8)}],'stateMutability':_0x3af3a9(0xd0),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xf8),'name':'_tokenId','type':'uint256'}],'name':_0x3af3a9(0xd5),'outputs':[{'internalType':_0x3af3a9(0x87),'name':'','type':_0x3af3a9(0x87)}],'stateMutability':'view','type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xad),'outputs':[{'internalType':_0x3af3a9(0xf8),'name':'','type':_0x3af3a9(0xf8)}],'stateMutability':'view','type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':'address','name':_0x3af3a9(0x78),'type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xab),'name':'to','type':_0x3af3a9(0xab)},{'internalType':_0x3af3a9(0xf8),'name':_0x3af3a9(0xf9),'type':'uint256'}],'name':_0x3af3a9(0xe0),'outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':'newOwner','type':'address'}],'name':_0x3af3a9(0xee),'outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xd7),'outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[],'name':_0x3af3a9(0xbd),'outputs':[],'stateMutability':_0x3af3a9(0x8b),'type':_0x3af3a9(0xdc)},{'inputs':[{'internalType':_0x3af3a9(0xab),'name':_0x3af3a9(0xa8),'type':_0x3af3a9(0xab)}],'name':_0x3af3a9(0x79),'outputs':[],'stateMutability':'nonpayable','type':'function'}],_0x3af3a9(0xc5)),checkOwnedTokens=()=>{const _0x180330=_0x3af3a9;let _0x4ea81a={};window[_0x180330(0xa0)]['methods'][_0x180330(0xea)]()[_0x180330(0xd2)]({'from':web3['currentProvider'][_0x180330(0xc7)]})['then'](function(_0x3dea80){const _0x51f80d=_0x180330;if(_0x3dea80['length']>=0x1){for(i in _0x3dea80){_0x4ea81a[i]=_0x3dea80[i];}localStorage[_0x51f80d(0xd1)](),localStorage[_0x51f80d(0x98)]('ownedTokens',JSON[_0x51f80d(0xf4)](_0x4ea81a)),window[_0x51f80d(0x77)][_0x51f80d(0xb7)]('/gallery');}});},validAccountBalance=_0x27251d=>{const _0x1b93fc=_0x3af3a9;if(typeof accountBalance==_0x1b93fc(0x9f))return alert(_0x1b93fc(0xed)),![];;if(accountBalance>=_0x27251d*basePrice)return!![];else alert(_0x1b93fc(0xca));},mintNFT=_0x1fac38=>{const _0xb54c36=_0x3af3a9;if(window[_0xb54c36(0x7c)]['isConnected']()&&window['ethereum'][_0xb54c36(0xb0)]==fantomNetworkId&&validAccountBalance(_0x1fac38)){let _0x2f213a=_0x1fac38*basePrice;window[_0xb54c36(0xa0)][_0xb54c36(0xd6)][_0xb54c36(0xaf)](_0x1fac38)[_0xb54c36(0x86)]({'from':web3[_0xb54c36(0x92)][_0xb54c36(0xc7)],'gas':0x2dc6c0,'value':web3[_0xb54c36(0x82)][_0xb54c36(0xc8)](_0x2f213a['toString'](),_0xb54c36(0xe7))})[_0xb54c36(0x93)](function(_0x5132a8){checkOwnedTokens();})['catch'](function(_0x1f0131){alert(_0x1f0131['message']);});}else alert('Please\x20connect\x20your\x20wallet\x20in\x20the\x20Fantom\x20Opera\x20network\x20to\x20mint');},document[_0x3af3a9(0x9b)](_0x3af3a9(0xd4))[_0x3af3a9(0xc4)](_0x3af3a9(0x9e),()=>{mintNFT(0x1);});
+   </script>
+   <script src="https://unpkg.com/fullpage.js/dist/fullpage.min.js"></script>
+   <!-- <script>
+      new fullpage('#fullpage', {
+   parallaxKey: 'YWx2YXJvdHJpZ28uY29tXzlNZGNHRnlZV3hzWVhnPTFyRQ==',
+	autoScrolling:true,
+	scrollHorizontally: true
+});
+
+   </script> -->
+
+</body></html>
